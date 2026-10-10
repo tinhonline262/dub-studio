@@ -18,10 +18,13 @@ export const ALLOW: Allow = {
  * Values that legitimately equal the English text: brands, units, abbreviations and words that are
  * spelled the same in the language. "*" applies to every language.
  */
-export const SAME_AS_EN: Record<"*" | "ru" | "zh" | "es" | "pt" | "fr", string[]> = {
+export const SAME_AS_EN: Record<"*" | "ru" | "zh" | "es" | "pt" | "fr" | "vi", string[]> = {
   "*": ["app.name", "bilingual.pct", "keepOrig.mp4", "keepOrig.mkv", "casting.gender.unknown", "asrVariant.int8", "asrVariant.fp32", "asrVariant.ultra", "asrVariant.ultraInt8", "jobs.atStage", "downloads.speed", "providers.localGemma", "providers.serverUrlPlaceholder", "url.qHeight", "url.tool.version"],
   ru: [],
   zh: ["units.gb", "units.mb", "units.kb", "units.b"],
+  vi: [
+    "secrets.proxyTitle", "units.gb", "units.mb", "units.watt", "units.kb", "units.b", "cloud.beta", "proxy.title", "hwPreset.gpu", "hwPreset.ram",
+  ],
   es: [
     "style.color", "voice.g_female", "voice.g_male", "remix.title", "jobs.kind.remix", "compare.original", "multilang.openEditor",
     "settings.auto", "settings.sec", "common.error", "setup.error", "batch.error", "transcribe.sec",

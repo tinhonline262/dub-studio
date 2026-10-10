@@ -7,8 +7,9 @@ import zh from "../locales/zh.json";
 import es from "../locales/es.json";
 import pt from "../locales/pt.json";
 import fr from "../locales/fr.json";
+import vi from "../locales/vi.json";
 
-export const LANGS = ["en", "ru", "zh", "es", "pt", "fr"] as const;
+export const LANGS = ["en", "ru", "zh", "es", "pt", "fr", "vi"] as const;
 export type Lang = (typeof LANGS)[number];
 
 // Языки КОНТЕНТА (источник/цель дубляжа) — шире локалей интерфейса. Полный набор Whisper large-v3 (99):
@@ -83,8 +84,8 @@ const detect = (): Lang => {
   return isLang(nav) ? nav : "en";
 };
 
-// Обёртку namespace { t: ... } применяем один раз ко всем бандлам (а не 6 раз вручную).
-const BUNDLES = { en, ru, zh, es, pt, fr };
+// Обёртку namespace { t: ... } применяем один раз ко всем бандлам (а не 7 раз вручную).
+const BUNDLES = { en, ru, zh, es, pt, fr, vi };
 const resources = Object.fromEntries(Object.entries(BUNDLES).map(([k, v]) => [k, { t: v }]));
 
 i18n.use(initReactI18next).init({

@@ -3,7 +3,7 @@ import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 import { SAME_AS_EN } from "./i18nAllowlist";
 
-const LANGS = ["en", "ru", "zh", "es", "pt", "fr"] as const;
+const LANGS = ["en", "ru", "zh", "es", "pt", "fr", "vi"] as const;
 type Lang = (typeof LANGS)[number];
 const LOCALES_DIR = join(import.meta.dirname, "..", "src", "locales");
 

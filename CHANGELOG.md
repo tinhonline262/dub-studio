@@ -4,6 +4,12 @@ What changed, newest first. Dates are release dates; the app is versioned by its
 build. Every change a user can see is written here in the commit that makes it, and the
 release notes on GitHub are taken from the release's section.
 
+## Unreleased
+
+### Added
+
+- **Vietnamese interface language.** The user interface is available in Vietnamese (`vi`).
+
 ## 2026-10-10 — 4.2.1
 
 ### Added
